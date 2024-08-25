@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../Logo/Logo";
 import { AppBar, Box, Button, Link, Toolbar } from "@mui/material";
+import BoyOutlinedIcon from "@mui/icons-material/BoyOutlined";
+import GirlOutlinedIcon from "@mui/icons-material/GirlOutlined";
 
 const TopNavbar = () => {
   return (
@@ -16,10 +18,20 @@ const TopNavbar = () => {
               gap: "10px",
             }}
           >
-            <Button color="inherit" variant="outlined">
+            <Button
+              color="inherit"
+              variant="outlined"
+              sx={{ padding: "3px 15px" }}
+              startIcon={<BoyOutlinedIcon />}
+            >
               Men
             </Button>
-            <Button color="inherit" variant="outlined">
+            <Button
+              color="inherit"
+              variant="outlined"
+              sx={{ padding: "3px 15px" }}
+              endIcon={<GirlOutlinedIcon />}
+            >
               Women
             </Button>
           </Box>
