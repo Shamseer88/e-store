@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <>
       <Typography variant="h6" component="h1" sx={{ fontWeight: "bold" }}>
-        Logo
+        E-Store
       </Typography>
     </>
   );
